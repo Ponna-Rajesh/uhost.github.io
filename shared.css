@@ -1,0 +1,106 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+.main-header{
+    position: fixed;
+    z-index: 1;
+    background:	#352F44;
+    color: #E0F4FF;
+    padding: 20px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    /* cursor: pointer; */
+}
+
+
+
+.main-nav-item{
+    display: inline-block;
+    color: aliceblue;
+
+}
+
+.main-brand{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    color: #ffffff;
+    vertical-align: middle;
+    cursor: pointer;
+
+}
+.main-brand img{
+    display: inline-block;
+    width: 40px;
+    vertical-align: middle;
+}
+
+.main-header > div{
+    display: inline-block;
+    
+} 
+ 
+.main-nav{
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 120px);
+    vertical-align: middle;
+} 
+
+.main-nav-items{
+    padding:10px;
+    margin: 0;
+    list-style: none;
+    float: right;
+}
+
+.main-nav-item a{
+    text-decoration: none;
+    color: #E4FBFF;
+    font-weight: bold;
+    margin: 0 16px;
+    padding:8px 16px;
+    background: #F11A7B;
+    border-radius: 8px;
+
+}
+
+.main-nav-item a:hover,
+.main-nav-item a:active{
+    color: #3a4664;
+    border-bottom: 5px solid white;
+}
+
+
+.main-footer{
+    background: black;
+    color: white;
+    margin: 0px;
+    padding: 40px 0px;
+    width: 100%;
+    
+}
+
+footer ul{
+    margin: 0px;
+    text-align: center;
+   
+}
+
+footer li{
+    list-style: none;
+    display: inline-block;
+}
+
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0px 50px;
+}
+
+footer a:hover,
+footer a:active{
+    color: #ccc;
+}

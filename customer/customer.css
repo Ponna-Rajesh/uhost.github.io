@@ -1,0 +1,65 @@
+main{
+    padding-top: 32px;
+}
+
+
+.overall{
+    margin-top: 60px;
+    margin-left: 16px;
+    margin-right: 16px;
+    
+}
+
+
+.image_container{
+    width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.info_container{
+    text-align: right;
+    padding: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 37%;
+}
+
+
+
+
+
+ h1{
+    color: #ff4545;
+}
+.info_container h2,a{
+    color: #343434;
+    text-decoration: none;
+}
+.img-a{
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.3)
+
+}
+.img-R{
+    box-shadow: 3px 3px 5px 3px rgb(0, 0, 0, 0.3)
+
+}
+
+
+.image_container-2{
+    text-align: right;
+    width: 67%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 8px;
+}
+.info_container-2{
+    padding: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+}
+
+
+.testimonial{
+    margin-top: 40px;
+}

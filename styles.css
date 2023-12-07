@@ -1,0 +1,171 @@
+
+
+#product-overview{
+                                /* information i have to know  */
+
+    /* background: url(images/pexels.jpg);
+    background-size: cover;
+    background-position:  left 0% bottom 100%; */
+
+    background: url(images/pexels.jpg) left 0% bottom 100%/cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 565px;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+
+#product-overview h1{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-size: xx-large;
+
+}
+
+.section-title{
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 18px;
+    color: white;
+}
+
+.plans{
+    background: #352F44;
+}
+.box{
+    background: #ED5AB3;
+    color: white;
+    display: inline-block;
+    margin: 8px;
+    padding: 16px;
+    /* text-align: center; */
+    width: 20%;
+    vertical-align: middle;
+    /* display: block */
+
+}
+
+.box:hover{
+    background: #3F0071;
+    color: whitesmoke;
+
+}
+
+.boxlist{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.main-plan{
+    background: #cf268a;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+.plan-annotation{
+    background: white;
+    color: #cf268a;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(224, 220, 220, 0.5);
+    
+}
+
+.box li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.box ul{
+    padding-left: 5px;
+}
+
+.price{
+    color: #F4BF96;
+}
+#main-price{
+    color: whitesmoke;
+}
+
+                                        /* button */
+
+button{
+    padding: 8px;
+    border-radius: 8px;
+    background: yellow;
+    color: black;
+    border: 0px solid black;
+    font:inherit;
+    font-weight: bold ;
+}
+
+button:hover{
+    background: #cf268a;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+
+}
+button:focus{
+    outline: none;
+}
+
+            /* pratice */
+ 
+.key-features{
+    background: #ff1b68;
+    color: white;
+    text-align: center;
+    padding: 45px 0px;
+}
+
+.key-features li{
+    list-style: none;
+    font-weight: bold;
+    margin: 0px 5px;
+}
+
+.key-features ul{
+    display: inline-block;
+    text-align: center;
+    padding-left: 0;
+    margin: 0px 10px;
+    vertical-align: middle;
+}
+
+.key-features h1{
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.image{
+    border: 2px solid black;
+    width: 128px;
+    height: 128px;
+    background: url(images/imgk2.jpg);
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+} 
+.info{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+.important{
+    padding-right: 32px;
+    display: inline-block;
+
+}
