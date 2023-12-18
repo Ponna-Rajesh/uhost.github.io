@@ -1,45 +1,101 @@
+*{
+    box-sizing: border-box;
+}
 
+.modal{
+    position: fixed;
+    display: none;
+    z-index: 200;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
 
+.modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+    text-align: center;
+}
+.modal__action {
+    border: 1px solid #0e4f1f;
+    background: #0e4f1f;
+    text-decoration: none;
+    color: white;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.modal__action:hover,
+.modal__action:active{
+    background: #2ddf5c;
+    border-color: #2ddf5c;
+}
+
+.modal__action--negative {
+    background: red;
+    border-color: red;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active{
+    background: #ff5454;
+    border-color: #ff5454;
+}
 #product-overview{
-                                /* information i have to know  */
-
-    /* background: url(images/pexels.jpg);
-    background-size: cover;
-    background-position:  left 0% bottom 100%; */
-
-    background: url(images/pexels.jpg) left 0% bottom 100%/cover;
-    /* background: rgb(179, 20, 179); */
+                                                                                        /* background: url(images/pexels.jpg);
+                                                                                        background-size: cover;
+                                                                                        background-position:  left 0% bottom 100%; */
+        background: url(images/pexels.jpg) left 60% bottom 90% /cover ,center;
     color: white;
     font-family: 'Poppins', sans-serif;
     width: 100%;
-    height: 565px;
-    padding: 10px;
+    height: 80vh;
+    padding: 1.6rem;
     margin: 0;
     box-sizing: border-box;
     position: relative;
 }
 
-
 #product-overview h1{  
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 29vh;
-    font-size: xx-large;
-
-    /* position: absolute;
-    bottom: 16%;
+                                                /* text-align: center;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                height: 29vh;
+                                                font-size: xx-large; */
+    font-size: 1.6rem;
+    position: absolute;
+    bottom: 40%;
     left: 3%;
-    z-index: 0; */
+    z-index: 0;
 
 
+}
+
+
+@media (min-width: 46rem) and (min-width: 60rem) {
+    #product-overview{
+        height: 100vh;
+    }
+    #product-overview h1{
+        font-size: 2.5rem;
+         bottom: 28%;
+
+    }
 }
 
 .section-title{
     text-align: center;
     margin-top: 0px;
-    padding-top: 18px;
+    padding-top: 1.1rem;
     color: white;
 }
 
@@ -49,14 +105,13 @@
 .box{
     background: #ED5AB3;
     color: white;
-    display: inline-block;
-    margin: 8px;
-    padding: 16px;
-    /* text-align: center; */
-    width: 26%;
-    vertical-align: middle;
-    /* display: block */
-
+    /* display: inline-block; */
+    margin: 1rem 0;
+    padding: 1rem;
+    /* text-align: center; 1 */
+    width: 100%;
+    /* vertical-align: middle; */
+    /* display: block 2 */
 }
 
 .box:hover{
@@ -65,21 +120,21 @@
 
 }
 
-.boxlist{
-    width: 80%;
-    margin: auto;
+ .boxlist{
+    width: 100%;
+    /* margin: auto; */
     text-align: center;
-    padding-bottom: 45px;
-}
+    padding-bottom: 2.8rem;
+} 
 
 .main-plan{
     background: #cf268a;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px; */
 }
 .plan-annotation{
     background: white;
     color: #cf268a;
-    padding: 8px;
+    padding: 0.5rem;
     border-radius: 8px;
     box-shadow: 2px 2px 2px 2px rgba(224, 220, 220, 0.5);
     
@@ -90,7 +145,7 @@
     margin-bottom: 5px;
 }
 .box ul{
-    padding-left: 5px;
+    padding-left: 0.3rem;
 }
 
 .price{
@@ -102,9 +157,9 @@
 
                                         /* button */
 
-button{
-    padding: 8px;
-    border-radius: 8px;
+.plan_button{
+    padding: 0.5rem;
+    /* border-radius: 8px; */
     background: yellow;
     color: black;
     border: 0px solid black;
@@ -112,16 +167,41 @@ button{
     font-weight: bold ;
 }
 
-button:hover{
+.plan_button:hover{
     background: #cf268a;
     color: #ffffff;
     cursor: pointer;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 
 }
-button:focus{
+.plan_button:focus{
     outline: none;
 }
+
+@media (min-width: 46rem) and (orientation: landscape) {
+     
+    .main-plan{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    }
+
+    .boxlist{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 2.8rem;
+        max-width: 854px;
+    } 
+    
+    .box{
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+        margin: 8px;  
+    }
+}
+
+
+
 
             /* pratice */
  
@@ -129,7 +209,8 @@ button:focus{
     background: #ff1b68;
     color: white;
     text-align: center;
-    padding: 45px 0px;
+    padding: 2.8rem 0px;
+
 }
 
 .key-features li{
@@ -144,6 +225,7 @@ button:focus{
     padding-left: 0;
     margin: 0px 10px;
     vertical-align: middle;
+    max-width: 854px ;
 }
 
 .key-features h1{
@@ -169,7 +251,11 @@ button:focus{
     margin-top: 20px;
 }
 .important{
-    padding-right: 32px;
+    padding-right: 2rem;
     display: inline-block;
 
 }
+
+
+
+

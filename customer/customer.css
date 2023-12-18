@@ -2,38 +2,49 @@ main{
     padding-top: 32px;
 }
 .testimonial{
-    font-size: 20px;
-    margin: 48px 0;
+    font-size: 1.2rem;
+    /* margin: 3rem 0; */
 }
 
-.testimonial_list{
+/* .testimonial_list{
     width: 80%;
     margin: auto;
-}
+} */
 
 .testimonial:first-of-type{
-    margin-top: 96px;
+    margin-top: 6rem;
 }
 
 .testimonial__image-container{
-    width: 60%;
-    display: inline-block;
-    vertical-align: middle;
+    /* width: 60%; */
+    width: 100%;
+    margin-bottom: 1.2rem;
+    max-width: 40rem;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
     box-shadow: 3px 3px 3px  4px rgba(0, 0, 0, 0.7);
 }
 
 .testimonial__image{
     width: 100%;
    vertical-align: bottom;
+
 }
 
 .testimonial_info{
-    text-align: right;
-    padding: 14px;
-    display: inline-block;
-    vertical-align: middle;
-    width: 30%;
+    text-align: left;
+    padding: 0.9rem;
+    /* display: inline-block;
+    vertical-align: middle; */
+    /* width: 30%; */
 
+}
+.testimonial_info1{
+    text-align: right;
+    padding: 0.9rem;
+    /* display: inline-block;
+    vertical-align: middle; */
+    /* width: 30%; */
 }
 
 #customer-2.testimonial{
@@ -45,13 +56,13 @@ main{
 }
 
 .testimonial__name{
-    margin: 3px;
+    margin: 0.2rem;
     color: #ff4545;
 }
 
 .testimonial__subtitle{
     margin: 0;
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #ccc;
 }
 
@@ -66,14 +77,28 @@ main{
 }
 
 .testimonial__text{
-    margin: 3px;
+    margin: 0.2rem;
 }
 
-/* .testimonial__image{
-    max-width: 100%;
-    height: auto;
-} */
-
-#text_info{
-    margin-right: 50px;
+@media (min-width: 46rem){
+    .testimonial{
+        margin: 3rem auto;
+        max-width: 1000px;
+    }
+    .testimonial__image-container{
+        display: inline-block;
+        vertical-align: middle; 
+        width: 66%;
+    }
+    .testimonial_info{
+        display: inline-block;
+        vertical-align: middle;
+        width: 30%;
+    }
+    .testimonial_info1{
+        display: inline-block;
+        vertical-align: middle; 
+        width: 30%;
+    }
 }
+
