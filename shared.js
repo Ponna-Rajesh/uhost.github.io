@@ -38,7 +38,7 @@ toggleButton.addEventListener("click", function(){
     // backdrop.style.display = "block";
     // mobileNav.style.display = "block";
     backdrop.classList.add('open')      
-    mobileNav.classList.add('open')      
+    mobileNav.classList.add('open')     
 })
 
 backdrop.addEventListener("click", function (){

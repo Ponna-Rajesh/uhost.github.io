@@ -9,12 +9,29 @@
     top: 20%;
     left: 10%;
     width: 80%;
-    background: white;
+    background: #726e6ec3;
+    color: #fff;
     padding: 1rem;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    
 }
-
+@media (min-width: 46rem){
+    .modal{
+        position: fixed;
+        display: none;
+        z-index: 200;
+        top: 20%;
+        left: 27%;
+        width: 80%;
+        background: #726e6ec3;
+        color: #fff;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        max-width: 600px;
+    }
+}
 .modal__title {
     text-align: center;
     margin: 0 0 1rem 0;
@@ -22,6 +39,9 @@
 
 .modal__actions {
     text-align: center;
+    /* display: flex;
+    justify-content: space-evenly; */
+   
 }
 .modal__action {
     border: 1px solid #0e4f1f;
@@ -53,7 +73,7 @@
                                                                                         /* background: url(images/pexels.jpg);
                                                                                         background-size: cover;
                                                                                         background-position:  left 0% bottom 100%; */
-        background: url(images/pexels.jpg) left 60% bottom 90% /cover ,center;
+        background: url(images/BG.jpg) left 50% bottom 60% /cover ,center;
     color: white;
     font-family: 'Poppins', sans-serif;
     width: 100%;
@@ -100,10 +120,11 @@
 }
 
 .plans{
-    background: #352F44;
+    background: #000000;
+    padding: 0 12px;
 }
 .box{
-    background: #ED5AB3;
+    background: #0F0F0F;
     color: white;
     /* display: inline-block; */
     margin: 1rem 0;
@@ -115,8 +136,9 @@
 }
 
 .box:hover{
-    background: #3F0071;
+    background: #434242;
     color: whitesmoke;
+    transition: all ease 1s;
 
 }
 
@@ -128,12 +150,12 @@
 } 
 
 .main-plan{
-    background: #cf268a;
+    background: #0F0F0F;
     /* box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px; */
 }
 .plan-annotation{
     background: white;
-    color: #cf268a;
+    color: #22A39F;
     padding: 0.5rem;
     border-radius: 8px;
     box-shadow: 2px 2px 2px 2px rgba(224, 220, 220, 0.5);
@@ -160,7 +182,7 @@
 .plan_button{
     padding: 0.5rem;
     /* border-radius: 8px; */
-    background: yellow;
+    background: #F3EFE0;
     color: black;
     border: 0px solid black;
     font:inherit;
@@ -168,10 +190,11 @@
 }
 
 .plan_button:hover{
-    background: #cf268a;
+    background: #000;
     color: #ffffff;
     cursor: pointer;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 2px 2px rgba(158, 150, 150, 0.5);
+    transition: all ease 0.7s;
 
 }
 .plan_button:focus{
@@ -190,6 +213,7 @@
         text-align: center;
         padding-bottom: 2.8rem;
         max-width: 854px;
+
     } 
     
     .box{
@@ -206,7 +230,7 @@
             /* pratice */
  
 .key-features{
-    background: #ff1b68;
+    background: #191717;
     color: white;
     text-align: center;
     padding: 2.8rem 0px;

@@ -18,7 +18,7 @@ body{
 .main-header{
     position: fixed;
     z-index: 1;
-    background:	#352F44;
+    background:	#000000;
     color: #E0F4FF;
     padding: 1.2rem 1rem;
     width: 100%;
@@ -48,13 +48,13 @@ body{
     font-weight: bold;
     font-size: 1.8rem;
     color: white;
-    background-color: lightseagreen;
+    background-color: #000000;
     padding: 8px 20px;
     border-radius: 3px;
     transition: all ease 0.4s;
 }
 .main-brand:hover{
-    box-shadow: 5px 5px 0px #fff;
+    box-shadow: 5px 5px 0px #434242;
 }
 /* .main-brand img{
     display: inline-block;
@@ -87,11 +87,11 @@ body{
 
 .main-nav-item a {
     text-decoration: none;
-    color: #E4FBFF;
+    color: #ccc;
     font-weight: bold;
     margin: 0 16px;
     padding: 0.5rem 1rem;
-    background: #F11A7B;
+    /* background: #F11A7B; */
     border-radius: 8px;
 
 }
@@ -99,8 +99,7 @@ body{
 .main-nav-item a:hover,
 .main-nav-item a:active
 {
-    color: #fff;
-    border-bottom: 5px solid rgb(74, 68, 157);
+ color: #fff;
 }
 
 
@@ -142,7 +141,7 @@ footer a:active{
     z-index: 101;
     top: 0;
     left: 0;
-    background: white;
+    background: #131314;
     width: 80%;
     height: 100vh;
 }
@@ -178,13 +177,13 @@ footer a:active{
 
 .mobile-nav__item a {
     text-decoration: none;
-    color: black;
+    color: #fff;
     font-weight: bold;
 }
 
 .toggle-button{
     width: 3rem;
-    background: #637E76;
+    background: #000;
     border-radius: 3px;
     border: none;
     cursor: pointer;
@@ -214,6 +213,7 @@ footer a:active{
     .toggle-button{
         display: none;
     }
+    
 }
 @media (min-width: 46rem){
     .main-nav{
