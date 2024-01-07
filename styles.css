@@ -38,11 +38,9 @@
 }
 
 .modal__actions {
-    text-align: center;
-    /* display: flex;
-    justify-content: space-evenly; */
-   
+    text-align: center;  
 }
+
 .modal__action {
     border: 1px solid #0e4f1f;
     background: #0e4f1f;
@@ -70,10 +68,7 @@
     border-color: #ff5454;
 }
 #product-overview{
-                                                                                        /* background: url(images/pexels.jpg);
-                                                                                        background-size: cover;
-                                                                                        background-position:  left 0% bottom 100%; */
-        background: url(images/BG.jpg) left 50% bottom 60% /cover ,center;
+    background: url(images/BG.jpg) left 50% bottom 60% /cover ,center;
     color: white;
     font-family: 'Poppins', sans-serif;
     width: 100%;
@@ -85,19 +80,11 @@
 }
 
 #product-overview h1{  
-                                                /* text-align: center;
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-                                                height: 29vh;
-                                                font-size: xx-large; */
     font-size: 1.6rem;
     position: absolute;
     bottom: 40%;
     left: 3%;
     z-index: 0;
-
-
 }
 
 
@@ -126,33 +113,27 @@
 .box{
     background: #0F0F0F;
     color: white;
-    /* display: inline-block; */
     margin: 1rem 0;
     padding: 1rem;
-    /* text-align: center; 1 */
     width: 100%;
-    /* vertical-align: middle; */
-    /* display: block 2 */
 }
 
 .box:hover{
     background: #434242;
     color: whitesmoke;
     transition: all ease 1s;
-
 }
 
  .boxlist{
     width: 100%;
-    /* margin: auto; */
     text-align: center;
     padding-bottom: 2.8rem;
 } 
 
 .main-plan{
     background: #0F0F0F;
-    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px; */
 }
+
 .plan-annotation{
     background: white;
     color: #22A39F;
@@ -206,35 +187,36 @@
     .main-plan{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
     }
-
+    
     .boxlist{
         width: 100%;
-        margin: auto;
-        text-align: center;
         padding-bottom: 2.8rem;
-        max-width: 854px;
-
+        display: flex;
+        justify-content: center;
+        align-items:center; 
     } 
     
     .box{
-        display: inline-block;
         width: 30%;
-        vertical-align: middle;
-        margin: 8px;  
+        margin: 8px;
+        min-width: 14rem;
+        max-width: 20rem;  
     }
 }
 
-
-
-
             /* pratice */
- 
+
 .key-features{
     background: #191717;
     color: white;
-    text-align: center;
     padding: 2.8rem 0px;
+}
 
+.key-features h1{
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
 }
 
 .key-features li{
@@ -243,20 +225,13 @@
     margin: 0px 5px;
 }
 
-.key-features ul{
-    display: inline-block;
-    text-align: center;
-    padding-left: 0;
-    margin: 0px 10px;
-    vertical-align: middle;
-    max-width: 854px ;
+.important{
+    padding-right: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap ;
 }
 
-.key-features h1{
-    margin-bottom: 50px;
-    font-weight: bold;
-    font-size: xx-large;
-}
 
 .image{
     border: 2px solid black;
@@ -274,11 +249,8 @@
     color: white;
     margin-top: 20px;
 }
-.important{
-    padding-right: 2rem;
-    display: inline-block;
 
-}
+
 
 
 

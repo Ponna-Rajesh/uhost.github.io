@@ -3,8 +3,97 @@
     margin: 0;
     padding: 0;
 }
-.imp{
-    background-color: gray;
+main{
+    padding-top:126px;
+    padding-bottom:100px;
+    color: #fff;
+    background: #000;  
+}
+
+.singup-title{
+    text-align: center;
+    font-size: 3rem;
+    color: #F5F5DC;
+    margin-bottom: 1rem;
+}
+
+.singup-form{
+    padding: 1rem;
+}
+
+.singup-form label{
+    font-weight: bold;
+}
+
+.singup-form label,
+.singup-form input,
+.singup-form select{
+    display: block;
+    margin-top: 1rem;
     width: 100%;
-    height: 100vh;
+}
+
+/* .singup-form input[type="checkbox"] */
+                /* or */
+.singup-form input[id*="terms"],
+.singup-form input[id*="terms"] + label {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.singup-form input,
+.singup-form select{
+    border: 1px solid #ccc;
+    padding: 0.3rem 0.5rem;
+    font: inherit;
+    border-radius: 2px;
+}
+.singup-form input:not([type= "checkbox"]):focus,
+.singup-form select:focus{
+    outline: none;
+    background-color: #434242;
+    color: #fff;
+}
+
+                    /* checkbox */                 
+.singup-form input[type="checkbox"]{
+    border: 1px solid #fff;
+    background: black;
+    width: 1rem;
+    height: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+.singup-form input[type="checkbox"]:checked{
+    background: green;
+    border: 1px solid white;
+}
+.singup-form input.invalid,
+.singup-form select.invalid,
+.singup-form :invalid{
+    border-color: #FF0303;
+    background: #df8b8b5d;
+}
+            /* button */
+.button{
+    border: none;
+    height: 40px;
+    width: 100px;
+    border: 1px solid white;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    display: block;
+    margin-top: 1rem;
+    font: inherit;
+}
+
+@media (min-width: 40rem) {
+    .singup-form{
+        margin: auto;
+        width: 25rem;
+    }
 }

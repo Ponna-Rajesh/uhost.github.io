@@ -47,6 +47,7 @@
         </header>
 
         <nav class="mobile-nav">
+            <span class="exit-x">&#10006;</span>
             <ul class="mobile-nav__items">
                 <li class="mobile-nav__item">
                     <a href="../packages/index.html">Packages</a>
@@ -54,34 +55,58 @@
                 <li class="mobile-nav__item">
                     <a href="../customer/customer.html">Customers</a>
                 </li>
-                <li class="mobile-nav__itemlast mobile-nav__item--cta">
+                <li class="mobile-nav__itemlast mobile-nav__item mobile-nav__item--cta">
                     <a href="../start-hostinng/hosting.html">Start Hosting</a>
                 </li>
             </ul>
         </nav>
         
-        <main>
+        <main class="signup-page">
+            <h1 class="singup-title">Awesome! Let's dive right in!</h1>
 
+            <form action="index.html" class="singup-form">
 
-            <div class="imp"></div>
+                <label for="title">Title</label>
 
+                <select id="title">  
+                    <option value="NONE"></option>
+                    <option value="mr">Mr.</option>
+                    <option value="ms">Ms.</option>
+                </select>
 
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" required>
 
+                <label for="last-name">Last name</label>
+                <input type="text" id="last-name" required>
 
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" required>
+
+                <label for="pasword">Password</label>
+                <input type="pasword" id="pasword" required>
+
+                <input type="checkbox" id="agree-terms" required>
+
+                <label for="agree-terms">
+                    Agree to <a href="#">Terms &amp; Conditions</a>
+                </label>
+                <button type="submit" class="button" >Sign up</button>
+            </form>
         </main>
         <footer class="main-footer">
             <nav>
-                <ul>
-                    <li>
+                <ul class="main-footer-links">
+                    <li class="main-footer-link">
                         <a href="#">Support</a>
                     </li>
-                    <li>
+                    <li class="main-footer-link">
                         <a href="#">Terms of Use</a>
                     </li>
                 </ul>
             </nav>
         </footer>
-   
+       <script src="hsting.js"></script>
       <script src="../shared.js"></script>
        
     </body>
